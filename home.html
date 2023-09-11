@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/481a1ded79.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img src="./resources/images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#protfolio">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Becoming a Full-stack Web Developer</p>
+          <h1>
+            Hello,<br />
+            I'm <span>Jeon NuRi.</span>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p> 
+                저는 개발자로의 전직을 목표로 하고 있는 비전공자입니다.<br>
+                저의 이력은 비록 개발 분야에서 시작하지 않았지만,<br>
+                꾸준한 열정과 학습을 통해 이 분야에서 성공을 찾기 위해 노력하고 있습니다. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('graduate', event)">
+                        Graduate</p>
+                    <p class="tab-links" onclick="opentab('skills', event)">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="graduate">
+                    <ul>
+                        <li><span>한밭대학교</span><br>화학공학과</li>
+                        <li><span>충남대학교</span><br>에너지과학기술대학원 에너지과학기술학과 신에너지소재</li>
+                        <li><span>국비학원</span><br>넥스트 IT 교육센터</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Language</span><br>Java</li>
+                        <li><span>Front-End</span><br>HTML/CSS, JavaScript</li>
+                        <li><span>Back-End</span><br>Oracle DB</li>
+                    </ul>
+                </div>
+          </div>
+          <div class="about-col-1">
+            <img src="./resources/images/list3.jpg"/>
+          </div>
+          <div class="moveTopBtn fa-bounce" style="color: white">
+            <i class="fa-solid fa-arrow-up fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- protfolio -->
+    <section id="protfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./resources/images/tarotcard.png">
+                    <div class="layer">
+                        <h3>Tarot Card</h3>
+                        <p>타로카드 리딩 사이트</p>
+                        <a href="https://nextitclassc-0828.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./resources/images/weather.png">
+                    <div class="layer">
+                        <h3>Weather</h3>
+                        <p>날씨 검색 사이트</p>
+                        <a href="https://nextitclassc-0910.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./resources/images/todolist.png">
+                    <div class="layer">
+                        <h3>Todo List</h3>
+                        <p>메모 입력 및 카운트다운 사이트</p>
+                        <a href="https://nextitclassc-0909.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-regular fa-paper-plane"></i>wjssnfl0504@gmail.com</p>
+                    <p><i class="fas fa-regular fa-mobile-screen"></i>010-5702-5782</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/SuperbatP" target="_blank"><i class="fas fa-brands fa-github"></i></a>
+                        <a href="https://blog.naver.com/rabia0504" target="_blank"><i class="fas fa-brands fa-blogger-b"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- script -->
+    <script src="./resources/js/main.js"></script>
+  </body>
+</html>
